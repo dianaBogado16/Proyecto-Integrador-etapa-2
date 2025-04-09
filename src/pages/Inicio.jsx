@@ -13,8 +13,8 @@ const Inicio = () => {
     <main>
       <section className="section-cards">
         <header className="section-cards__header">
-          <h1>Más vendidos de esta semana en tecnologia</h1>
-          <p>Se encontraron 8 productos</p>
+          <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+          <p>Se encontraron X productos</p>
         </header>
       </section>
 
