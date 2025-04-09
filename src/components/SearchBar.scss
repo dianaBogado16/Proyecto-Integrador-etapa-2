@@ -1,0 +1,87 @@
+/* ----------------------------------------- */
+/* SEARCH BAR */
+/* ----------------------------------------- */
+
+.search-bar {
+    display: flex;
+    background-color: #10002B;
+    justify-content: space-around;
+    
+    &__logo-container { /* search-bar__logo-container */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Orbitron", serif;
+        font-optical-sizing: auto;
+        color: white;
+        font-size: 35px;
+        margin-left: 30px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &__logo-container:hover {
+        transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
+    }
+
+    &__form-container {
+        padding: 1rem;
+        background-color: #10002B ;
+        display: flex; 
+        flex-basis: 100%; 
+        justify-content: center;
+        
+    }
+
+    &__form-label {
+        display: none;
+    }
+
+    &__form-search {
+        background-color: white;
+        border: none;   
+    }
+
+    &__form-submit {
+        background-color: #9D4EDD;
+        color: white;
+        padding: 2%;
+        border: none ;
+        border-radius: 4%;
+        cursor: pointer;
+    }
+
+    &__carrito-container {
+        flex: 0 0 3rem; /* shorthand(grow shrink basis) */
+        background-color: #3C096C;
+        text-align: center;
+        padding-top: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 992px ){
+        &__form-search {
+            width: 300px;
+            height: 35px;
+            border-radius: 6px 0 0 6px; /* Bordes redondeados a la izquierda */
+            
+        }
+
+        &__form-submit {
+            height: 35px;
+            border-radius: 0 6px 6px 0; /* Bordes redondeados en la derecha */
+            border: none;
+            text-align: center;
+            padding: 10px;
+        }
+
+        &__form-label {
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-right: 10px;
+            font-family: "JetBrains Mono", serif;
+     
+        }
+    }
+}

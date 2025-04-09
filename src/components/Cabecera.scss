@@ -1,0 +1,91 @@
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+/* MOBILE FIRST */
+.main-header {
+    display: flex;
+    flex-direction: column-reverse; 
+    
+
+    @media screen and (min-width:992px) { /* Cuando sea una pantalla de pc, quiero que el menu inicio-contacto-nosotros suba para arriba de la barra de busqueda */
+        & {
+            flex-direction: column;
+        }
+    }
+
+}
+
+#menu {
+    display: none; /*Oculta el checkbox*/
+    
+
+    /* El '&' significa que en cuanto a especificaciones me refiero a 'menu' tambien. La parte de checked (que significa 'cuando está marcado') se activa el siguiente hermano .nav-bar se muestra usando display: block;*/
+    &:checked + .nav-bar { 
+        display: block;
+    }
+
+    &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
+        background-color: C77DFF; /* Hace que la caja del menu hamburguesa se ponga rojo cuando uno lo selecciona */
+    }      
+      
+}  
+
+
+/* ----------------------------------------- */
+/* MENU TOOGLE */
+/* ----------------------------------------- */
+
+.menu-toogle {
+    /* Con display block le digo que muestre la cajita de hamburguesa cuando es un celular*/
+    display: block;
+    background-color: #C77DFF;
+    flex: 0 0 3rem; 
+    position: relative;
+    cursor: pointer; /* hacer el mouse una manito */
+    
+
+    &__label {
+        display: block;
+        background-color: #7B2CBF;
+        height: 100%;
+        cursor: pointer;
+        
+    }
+
+    &__top-bread,
+    &__meat , 
+    &__bottom-bread {
+        display: block;
+        background-color: #333;
+        height: .2rem;
+        position: absolute; /*  para poder definir la posicion */
+        left: .5rem ;
+        right: .5rem ;
+        
+        
+    }
+
+    &__top-bread {
+        top: .8rem;
+        
+    }
+
+    &__meat { /* centrar sin usar flexbox */
+        top: 50%; /* manera de posicionar y centrar un elemento, le pido que se centre(verticalmente) al 50% del elemento, o sea en el medio del alto de la caja */
+        margin-top: -.1rem; /* Para lo de arriba tuve en cuenta esto, restandole la mitad de lo que mide height (.2rem) asi queda centrado a la mitad de la caja, teniendo en cuenta ahora lo que ocupa el ancho de la barrita que ahora este en el centro de la caja*/
+    }
+
+    &__bottom-bread {
+        bottom: .8rem;
+            
+    }
+
+    @media screen and (min-width: 992px ){
+        & { /* menu toogle */
+            /* Cuando sea una pantalla de pc, quiero que desaparezca el menu hamburguesa */
+            display: none;
+            
+        }
+    }
+}

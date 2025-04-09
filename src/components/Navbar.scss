@@ -1,0 +1,61 @@
+/* ------------------------------- */
+/* NAVBAR */
+/* ------------------------------- */
+
+
+.nav-bar {
+    background-color: purple;
+   
+    display: none; 
+
+    /* La barra que contiene el inicio-alta-nosotros-contacto */
+    &__nav-list { /* con & estoy diciendo que agarre ambas etiquetas.nav-bar__nav-list */
+        display: flex;
+        flex-direction: column;  /* Si quiero que la barra en vez de estar de columna este de fila, modifico aca */
+        justify-content: center;
+        list-style-type: none;
+
+        @media screen and (min-width: 992px) {
+            & { /* Al poner & le digo que solamente cambie del 'nav-bar__navlist' las cosas qe voy a poner aca cuando la pantalla sea una computadora  */
+                flex-direction: row;
+                border: none;
+                
+            }
+            
+        }
+    }
+
+    &__nav-item { /* nav-bar__nav-item*/
+        text-align: center;
+        
+    }
+
+    &__nav-link {
+        display: block;
+        background-color: purple;
+        padding: 1rem 2rem;
+        color: white;
+        border: 1px solid #10002B;
+        text-decoration: none;
+    }
+
+    @media screen and (min-width: 992px){ //compu
+        & {
+            display: block;
+        }
+
+        &__nav-link{
+            border: none;
+            text-decoration: none;
+            font-weight: 600;
+            
+        }
+
+        &__nav-link:hover{
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+        }
+
+
+    }
+
+}

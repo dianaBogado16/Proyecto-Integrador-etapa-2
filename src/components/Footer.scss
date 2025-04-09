@@ -1,0 +1,103 @@
+/* -------------------------------------- */
+/* ----------FOOTER --------------------- */
+/* -------------------------------------- */
+
+/* MOBILE FIRST */
+    
+
+.foot {
+    display: flex;
+    width: 100%;
+    flex-direction: column; 
+    align-items: center;
+    background-color: grey;
+    padding: 8px; 
+    margin-top: 40px ;
+    color: white;
+    gap: 5px;
+
+    @media screen and (min-width:992px) { /* Cuando sea una pantalla de pc, quiero que el menu inicio-contacto-nosotros suba para arriba de la barra de busqueda */
+        & {
+            width: 100%;
+            padding: 4px;
+        }
+    }
+}
+
+    
+
+
+.whatsapp {
+    background-color: #25D366;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    color: white;
+    width: 55px;
+    height: 55px;
+    line-height: 65px; /* lo mismo que el alto */
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.seguir {
+    font-family: "JetBrains Mono", serif;
+    font-weight: 800;
+    color: white;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los íconos */
+    margin-bottom: 10px; /* Espacio entre los íconos y el texto de copyright */
+}
+
+.instagram {
+    background-color: #C13584;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    color: white;
+    width: 50px;
+    height: 50px;
+    line-height: 65px; /* lo mismo que el alto */
+    text-align: center;
+    cursor: pointer;
+}
+
+.facebook {
+    background-color: #1877F2;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    color: white;
+    width: 50px;
+    height: 50px;
+    line-height: 65px; /* lo mismo que el alto */
+    text-align: center;
+    cursor: pointer;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    color: white;
+    width: 50px;
+    height: 50px;
+    line-height: 65px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.copy {
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    font-weight: 400;
+}
+
