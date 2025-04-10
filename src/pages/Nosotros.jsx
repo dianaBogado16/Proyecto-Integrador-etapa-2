@@ -7,7 +7,7 @@ const Nosotros = () => {
   return (
     <>
 
-      <h1 className="titulo-nosotros" >NOSOTROS</h1>
+      <h1 className="titulo-nosotros" >Nosotros</h1>
 
       <div className="intro" >
         <p>En <b className="marca">TecnoBaires</b>, somos apasionados por la tecnología

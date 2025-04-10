@@ -11,8 +11,8 @@ const Inicio = () => {
 
   return (
     <main>
-      <section class="section-cards">
-        <header class="section-cards__header">
+      <section className="section-cards">
+        <header className="section-cards__header">
           <h1>Más vendidos de esta semana en tecnologia</h1>
           <p>Se encontraron los siguientes productos</p>
         </header>
