@@ -21,7 +21,7 @@ const Card = ({ producto }) => { // props = { producto }
                 <h2 className="card__heading">{producto.nombre}</h2>
                 <div className="card__description">
                     <p>{producto.descripcion}</p>
-                    <button onClick={() => handleAgregar(producto)}>Agregar</button>
+                    <button className='btn_agregar' onClick={() => handleAgregar(producto)}>Agregar</button>
                 </div>
             </div>
         </article>
