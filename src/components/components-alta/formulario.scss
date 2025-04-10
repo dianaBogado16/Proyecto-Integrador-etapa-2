@@ -3,13 +3,33 @@
     margin: 20px;
 }
 
+input[type="text"], 
+input[type="number"], 
+input[type="checkbox"], 
+select {
+  width: 100%; // Ocupa el 100% del ancho del contenedor
+  padding: 10px; // Espaciado interno
+  border: 1px solid #ddd; // Borde sutil para las celdas
+  border-radius: 5px; // Bordes redondeados
+  box-sizing: border-box; // Asegura que el padding no afecte el tamaño del input
+  font-size: 14px; // Texto legible
+}
+
+input[type="checkbox"] {
+  width: auto; // Excepción para checkbox
+  margin-right: 8px; // Espaciado entre el checkbox y su label
+}
+
+
+
+
 .formulario_editar_producto {
     width: fit-content; // Ajusta el ancho al contenido del formulario
     height: fit-content; // Ajusta la altura al contenido del formulario
     margin: 0 auto; // Centra el formulario horizontalmente
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
     padding: 20px; // Espaciado interno para evitar que el texto toque el borde
     border: 2px solid #3a0ca3; // Define el borde
     border-radius: 10px; // Bordes redondeados para darle estilo
