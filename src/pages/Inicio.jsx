@@ -11,13 +11,12 @@ const Inicio = () => {
 
   return (
     <main>
-      <section className="section-cards">
-        <header className="section-cards__header">
-          <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-          <p>Se encontraron X productos</p>
+      <section class="section-cards">
+        <header class="section-cards__header">
+          <h1>Más vendidos de esta semana en tecnologia</h1>
+          <p>Se encontraron los siguientes productos</p>
         </header>
       </section>
-
       <section className="cards-container" id="container-productos">
         {
           productos && productos.map((producto) => (
