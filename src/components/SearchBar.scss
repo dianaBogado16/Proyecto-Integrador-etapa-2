@@ -34,6 +34,7 @@
 
     &__form-label {
         display: none;
+        
     }
 
     &__form-search {
@@ -57,6 +58,23 @@
         padding-top: 20px;
         color: white;
         cursor: pointer;
+
+            // Específicamente para el icono
+        .material-icons {
+            color: white; // Color inicial del icono
+            font-size: 24px; // Ajusta el tamaño del icono
+            transition: color 0.3s ease, transform 0.3s ease; // Transición suave para interacciones
+
+            &:hover {
+            color: #FFD700; // Cambia el color al pasar el mouse (amarillo dorado)
+            transform: scale(1.2); // Agranda el icono ligeramente
+            }
+
+            &:focus {
+            outline: none; // Quita el contorno predeterminado
+            color: #FF5733; // Cambia de color al enfocar (naranja vibrante)
+            }
+        }
     }
 
     @media screen and (min-width: 992px ){

@@ -6,11 +6,13 @@ const SearchBar = () => {
     <div className="search-bar">
         <div className="search-bar__logo-container">
             TecnoBaires
-            <i className="fa-solid fa-bag-shopping"></i>
+            <i className="material-icons">shopping_bag</i>
         </div>
 
     <form action="#" className="search-bar__form-container">
-        <label htmlFor="busqueda" className="search-bar__form-label">Buscar</label>
+        <label htmlFor="busqueda" className="search-bar__form-label">
+          <i className="material-icons">search</i>
+        </label>
     
         <input
             type="search"
@@ -22,7 +24,9 @@ const SearchBar = () => {
     </form>
 
     <div className="search-bar__carrito-container">
-      <Link to="/carrito" >C</Link>
+      <Link to="/carrito" >
+      <i className="material-icons">shopping_cart</i>
+      </Link>
     </div>
 
     <div className="menu-toogle">

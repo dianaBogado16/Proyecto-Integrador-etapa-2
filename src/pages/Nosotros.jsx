@@ -19,9 +19,29 @@ const Nosotros = () => {
         necesitas, siempre con la más alta calidad y a precios competitivos.</p>
       </div>
 
-      {/* foto local */}
+  
+      <div className="imagen">
+        <img  src="/imgs/tienda.webp" alt="Imagen del local" />
+      </div>
 
-      {/* logos */}
+      <div class="intro">
+        <p>
+          Para una atencion mas personalizada, pruebas en vivo, ofertas exclusivas
+          para compras en la tienda y soporte donde podras resolver todas tus
+          dudas y problemas con nuestro servicio de soporte tecnico te invitamos a
+          conocer nuestro local donde ademas aceptamos todos los medios de pago ya
+          sea que prefieras pagar con tarjeta de crédito, tarjeta de débito,
+          efectivo, transferencia bancaria o incluso pagos móviles y billeteras
+          electrónicas, ¡tenemos todo cubierto!
+        </p>
+      </div>
+
+      <div className="logo-box" >
+          <i className="material-icons" >payments</i>
+          <i className="material-icons" >account_balance</i>
+          <i className="material-icons" >credit_card</i>
+          <i className="material-icons" >phone_iphone</i>
+      </div>
       
       <div className="intro">
         <p>
