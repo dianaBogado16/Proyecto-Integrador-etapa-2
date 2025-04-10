@@ -1,86 +1,6 @@
 {
-  "productos": [
-    {
-      "nombre": "IPhone 15 Pro Max",
-      "foto": "imgs/apple-iphone-11-pro-max.jpg",
-      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-      "precio": 250.5,
-      "stock": "4444",
-      "marca": "Apple",
-      "categoria": "celulares",
-      "id": "1",
-      "envio": false
-    },
-    {
-      "nombre": "IPhone 12",
-      "foto": "imgs/apple-iphone-12.jpg",
-      "detalles": "Quasi cupiditate quisquam facere molestiae",
-      "precio": 240.3,
-      "stock": "2",
-      "marca": "Apple",
-      "categoria": "celulares",
-      "id": "2",
-      "envio": false
-    },
-    {
-      "nombre": "Auriculares Sony",
-      "foto": "imgs/auriculares-sony.jpg",
-      "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
-      "precio": 985,
-      "stock": 4,
-      "marca": "Sleek Cotton Chips",
-      "categoria": "Refined",
-      "id": "3",
-      "envio": false
-    },
-    {
-      "nombre": "Camara Canon",
-      "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      "foto": "imgs/camara-canon.jpg",
-      "precio": "789",
-      "stock": 7,
-      "marca": "Rustic Soft Tuna",
-      "categoria": "Generic",
-      "id": "4",
-      "envio": false
-    },
-    {
-      "nombre": "Samsung",
-      "detalles": "Facere molestiae odio neque rerum provident voluptas",
-      "foto": "imgs/celular-samsung.jpg",
-      "precio": 1200,
-      "stock": 4,
-      "marca": "Samsung",
-      "categoria": "celulares",
-      "id": "5",
-      "envio": true
-    },
-    {
-      "id": "6",
-      "nombre": "Chromecast",
-      "precio": 332.22,
-      "stock": 4,
-      "marca": "Google",
-      "categoria": "Electronica",
-      "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio neque rerum provident voluptas!",
-      "foto": "imgs/chromecast-google.jpg",
-      "envio": true
-    },
-    {
-      "id": "8",
-      "nombre": "Producto X",
-      "precio": "2333",
-      "stock": "2",
-      "marca": "Sorny",
-      "categoria": "Electro",
-      "detalles": "Piola. 8k",
-      "foto": "imgs/apple-iphone-11-pro-max.jpg",
-      "envio": true
-    }
-  ],
-  "carrito": [
-    {
-      "0": {
+    "productos": [
+      {
         "nombre": "IPhone 15 Pro Max",
         "foto": "imgs/apple-iphone-11-pro-max.jpg",
         "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
@@ -89,10 +9,9 @@
         "marca": "Apple",
         "categoria": "celulares",
         "id": "1",
-        "envio": false,
-        "cantidad": 1
+        "envio": false
       },
-      "1": {
+      {
         "nombre": "IPhone 12 (editado)",
         "foto": "imgs/apple-iphone-12.jpg",
         "detalles": "Quasi cupiditate quisquam facere molestiae",
@@ -101,10 +20,9 @@
         "marca": "Apple",
         "categoria": "celulares",
         "id": "2",
-        "envio": false,
-        "cantidad": 1
+        "envio": false
       },
-      "2": {
+      {
         "nombre": "Auriculares Sony",
         "foto": "imgs/auriculares-sony.jpg",
         "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
@@ -113,38 +31,10 @@
         "marca": "Sleek Cotton Chips",
         "categoria": "Refined",
         "id": "3",
-        "envio": false,
-        "cantidad": 1
+        "envio": false
       },
-      "id": "e820"
-    },
-    {
-      "0": {
-        "nombre": "IPhone 12 (editado)",
-        "foto": "imgs/apple-iphone-12.jpg",
-        "detalles": "Quasi cupiditate quisquam facere molestiae",
-        "precio": 240.3,
-        "stock": "2",
-        "marca": "Apple",
-        "categoria": "celulares",
-        "id": "2",
-        "envio": false,
-        "cantidad": 1
-      },
-      "1": {
-        "nombre": "Auriculares Sony",
-        "foto": "imgs/auriculares-sony.jpg",
-        "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
-        "precio": 985,
-        "stock": 4,
-        "marca": "Sleek Cotton Chips",
-        "categoria": "Refined",
-        "id": "3",
-        "envio": false,
-        "cantidad": 1
-      },
-      "2": {
-        "nombre": "Camara Canon",
+      {
+        "nombre": "Camara Canon (editado)",
         "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "foto": "imgs/camara-canon.jpg",
         "precio": "789",
@@ -152,10 +42,9 @@
         "marca": "Rustic Soft Tuna",
         "categoria": "Generic",
         "id": "4",
-        "envio": false,
-        "cantidad": 1
+        "envio": false
       },
-      "3": {
+      {
         "nombre": "Samsung",
         "detalles": "Facere molestiae odio neque rerum provident voluptas",
         "foto": "imgs/celular-samsung.jpg",
@@ -164,43 +53,34 @@
         "marca": "Samsung",
         "categoria": "celulares",
         "id": "5",
-        "envio": true,
-        "cantidad": 1
+        "envio": true
       },
-      "id": "402c"
-    },
-    {
-      "0": {
-        "nombre": "IPhone 15 Pro Max",
-        "foto": "imgs/apple-iphone-11-pro-max.jpg",
-        "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-        "precio": 250.5,
-        "stock": "4444",
-        "marca": "Apple",
-        "categoria": "celulares",
-        "id": "1",
-        "envio": false,
-        "cantidad": 1
+      {
+        "id": "6",
+        "nombre": "Chromecast",
+        "precio": 332.22,
+        "stock": 4,
+        "marca": "Google",
+        "categoria": "Electronica",
+        "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio neque rerum provident voluptas!",
+        "foto": "imgs/chromecast-google.jpg",
+        "envio": true
       },
-      "1": {
-        "nombre": "IPhone 12 (editado)",
-        "foto": "imgs/apple-iphone-12.jpg",
-        "detalles": "Quasi cupiditate quisquam facere molestiae",
-        "precio": 240.3,
+      {
+        "id": "8",
+        "nombre": "Producto X",
+        "precio": "2333",
         "stock": "2",
-        "marca": "Apple",
-        "categoria": "celulares",
-        "id": "2",
-        "envio": false,
-        "cantidad": 1
-      },
-      "id": "51c0"
-    },
-    {
-      "id": "c77c",
-      "createAt": 1742338656350,
-      "carrito": [
-        {
+        "marca": "Sorny",
+        "categoria": "Electro",
+        "detalles": "Piola. 8k",
+        "foto": "imgs/apple-iphone-11-pro-max.jpg",
+        "envio": true
+      }
+    ],
+    "carrito": [
+      {
+        "0": {
           "nombre": "IPhone 15 Pro Max",
           "foto": "imgs/apple-iphone-11-pro-max.jpg",
           "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
@@ -212,7 +92,7 @@
           "envio": false,
           "cantidad": 1
         },
-        {
+        "1": {
           "nombre": "IPhone 12 (editado)",
           "foto": "imgs/apple-iphone-12.jpg",
           "detalles": "Quasi cupiditate quisquam facere molestiae",
@@ -224,7 +104,7 @@
           "envio": false,
           "cantidad": 1
         },
-        {
+        "2": {
           "nombre": "Auriculares Sony",
           "foto": "imgs/auriculares-sony.jpg",
           "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
@@ -235,39 +115,47 @@
           "id": "3",
           "envio": false,
           "cantidad": 1
-        }
-      ]
-    },
-    {
-      "id": "ec99",
-      "createAt": 1742338708642,
-      "cantidad": 3,
-      "carrito": [
-        {
-          "id": "8",
-          "nombre": "Producto X",
-          "precio": "2333",
+        },
+        "id": "e820"
+      },
+      {
+        "0": {
+          "nombre": "IPhone 12 (editado)",
+          "foto": "imgs/apple-iphone-12.jpg",
+          "detalles": "Quasi cupiditate quisquam facere molestiae",
+          "precio": 240.3,
           "stock": "2",
-          "marca": "Sorny",
-          "categoria": "Electro",
-          "detalles": "Piola. 8k",
-          "foto": "imgs/apple-iphone-11-pro-max.jpg",
-          "envio": true,
+          "marca": "Apple",
+          "categoria": "celulares",
+          "id": "2",
+          "envio": false,
           "cantidad": 1
         },
-        {
-          "id": "6",
-          "nombre": "Chromecast",
-          "precio": 332.22,
+        "1": {
+          "nombre": "Auriculares Sony",
+          "foto": "imgs/auriculares-sony.jpg",
+          "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
+          "precio": 985,
           "stock": 4,
-          "marca": "Google",
-          "categoria": "Electronica",
-          "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio neque rerum provident voluptas!",
-          "foto": "imgs/chromecast-google.jpg",
-          "envio": true,
+          "marca": "Sleek Cotton Chips",
+          "categoria": "Refined",
+          "id": "3",
+          "envio": false,
           "cantidad": 1
         },
-        {
+        "2": {
+          "nombre": "Camara Canon (editado)",
+          "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+          "foto": "imgs/camara-canon.jpg",
+          "precio": "789",
+          "stock": 7,
+          "marca": "Rustic Soft Tuna",
+          "categoria": "Generic",
+          "id": "4",
+          "envio": false,
+          "cantidad": 1
+        },
+        "3": {
           "nombre": "Samsung",
           "detalles": "Facere molestiae odio neque rerum provident voluptas",
           "foto": "imgs/celular-samsung.jpg",
@@ -278,15 +166,11 @@
           "id": "5",
           "envio": true,
           "cantidad": 1
-        }
-      ]
-    },
-    {
-      "id": "865c",
-      "createAt": 1743647107331,
-      "cantidad": 2,
-      "carrito": [
-        {
+        },
+        "id": "402c"
+      },
+      {
+        "0": {
           "nombre": "IPhone 15 Pro Max",
           "foto": "imgs/apple-iphone-11-pro-max.jpg",
           "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
@@ -298,7 +182,7 @@
           "envio": false,
           "cantidad": 1
         },
-        {
+        "1": {
           "nombre": "IPhone 12 (editado)",
           "foto": "imgs/apple-iphone-12.jpg",
           "detalles": "Quasi cupiditate quisquam facere molestiae",
@@ -309,8 +193,124 @@
           "id": "2",
           "envio": false,
           "cantidad": 1
-        }
-      ]
-    }
-  ]
-}
+        },
+        "id": "51c0"
+      },
+      {
+        "id": "c77c",
+        "createAt": 1742338656350,
+        "carrito": [
+          {
+            "nombre": "IPhone 15 Pro Max",
+            "foto": "imgs/apple-iphone-11-pro-max.jpg",
+            "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+            "precio": 250.5,
+            "stock": "4444",
+            "marca": "Apple",
+            "categoria": "celulares",
+            "id": "1",
+            "envio": false,
+            "cantidad": 1
+          },
+          {
+            "nombre": "IPhone 12 (editado)",
+            "foto": "imgs/apple-iphone-12.jpg",
+            "detalles": "Quasi cupiditate quisquam facere molestiae",
+            "precio": 240.3,
+            "stock": "2",
+            "marca": "Apple",
+            "categoria": "celulares",
+            "id": "2",
+            "envio": false,
+            "cantidad": 1
+          },
+          {
+            "nombre": "Auriculares Sony",
+            "foto": "imgs/auriculares-sony.jpg",
+            "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
+            "precio": 985,
+            "stock": 4,
+            "marca": "Sleek Cotton Chips",
+            "categoria": "Refined",
+            "id": "3",
+            "envio": false,
+            "cantidad": 1
+          }
+        ]
+      },
+      {
+        "id": "ec99",
+        "createAt": 1742338708642,
+        "cantidad": 3,
+        "carrito": [
+          {
+            "id": "8",
+            "nombre": "Producto X",
+            "precio": "2333",
+            "stock": "2",
+            "marca": "Sorny",
+            "categoria": "Electro",
+            "detalles": "Piola. 8k",
+            "foto": "imgs/apple-iphone-11-pro-max.jpg",
+            "envio": true,
+            "cantidad": 1
+          },
+          {
+            "id": "6",
+            "nombre": "Chromecast",
+            "precio": 332.22,
+            "stock": 4,
+            "marca": "Google",
+            "categoria": "Electronica",
+            "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio neque rerum provident voluptas!",
+            "foto": "imgs/chromecast-google.jpg",
+            "envio": true,
+            "cantidad": 1
+          },
+          {
+            "nombre": "Samsung",
+            "detalles": "Facere molestiae odio neque rerum provident voluptas",
+            "foto": "imgs/celular-samsung.jpg",
+            "precio": 1200,
+            "stock": 4,
+            "marca": "Samsung",
+            "categoria": "celulares",
+            "id": "5",
+            "envio": true,
+            "cantidad": 1
+          }
+        ]
+      },
+      {
+        "id": "865c",
+        "createAt": 1743647107331,
+        "cantidad": 2,
+        "carrito": [
+          {
+            "nombre": "IPhone 15 Pro Max",
+            "foto": "imgs/apple-iphone-11-pro-max.jpg",
+            "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+            "precio": 250.5,
+            "stock": "4444",
+            "marca": "Apple",
+            "categoria": "celulares",
+            "id": "1",
+            "envio": false,
+            "cantidad": 1
+          },
+          {
+            "nombre": "IPhone 12 (editado)",
+            "foto": "imgs/apple-iphone-12.jpg",
+            "detalles": "Quasi cupiditate quisquam facere molestiae",
+            "precio": 240.3,
+            "stock": "2",
+            "marca": "Apple",
+            "categoria": "celulares",
+            "id": "2",
+            "envio": false,
+            "cantidad": 1
+          }
+        ]
+      }
+    ]
+  }
