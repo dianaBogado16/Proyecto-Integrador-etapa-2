@@ -9,7 +9,7 @@ const Footer = () => {
   
         <div className="logos">
           <div className="instagram">
-          <img src="/imgs/instagram-logo.png" alt="Instagram Logo" style={{ width: '50px', height: 'auto' }} />
+            <img src="/imgs/instagram-logo.png" alt="Instagram Logo" style={{ width: '50px', height: 'auto' }} />
           </div>
   
           <div className="facebook">
@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
   
           <div className="twitter">
-          
+            <img src="/imgs/twitter-logo.png" alt="twitter Logo" style={{ width: '50px', height: 'auto' }} />
           </div>
         </div>
         
