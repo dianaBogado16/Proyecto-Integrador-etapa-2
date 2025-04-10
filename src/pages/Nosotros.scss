@@ -1,0 +1,50 @@
+
+.intro{
+    margin: 4%;
+}
+
+.titulo-nosotros {
+    color: #10002B;
+    text-align: center;
+    font-size: xxx-large;
+    margin: 2%;
+}
+
+.marca {
+    background-color: #10002B;
+    color: white;
+}
+
+.imagen {
+    text-align: center;
+}
+
+.mapa {
+    text-align: center;
+    border: 1px solid #7B2CBF;
+    box-sizing: border-box;
+
+    @media screen and ( min-width: 992px) {
+        border: none;
+        
+    }
+
+}
+.logo-box {
+    border: 2px solid #7B2CBF; 
+    padding: 20px;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    background-color: #f0f0f0; 
+    width: 80%; 
+    margin: 0 auto; 
+    margin-bottom: 30px;
+    border-radius: 10px
+}
+
+.material-icons {
+    color: #7B2CBF;
+    height: auto; 
+
+}
