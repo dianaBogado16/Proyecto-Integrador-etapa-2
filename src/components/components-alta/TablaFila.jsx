@@ -2,6 +2,8 @@ import { useContext } from "react"
 import ProductosContext from "../../contexts/ProductosContext"
 import {  useNavigate } from "react-router"
 
+import "./TablaFila.scss"
+
 
 const TablaFila = ({producto}) => {
 
@@ -35,10 +37,10 @@ const handleVer = (id) => {
         <img src={producto.foto } alt={producto.nombre} style={{ width: '40px'}} />
     </td>
     <td>{producto.envio? 'si' : 'no'}</td>
-    <td>
-        <button onClick={() => handleVer(producto.id)} >Ver</button>
-        <button onClick={() => handleEditar(producto)} >Editar</button>
-        <button onClick={() => handleEliminar(producto.id)}>Borrar</button>
+    <td className="botonera" >
+        <button className="btn-ver" onClick={() => handleVer(producto.id)} >Ver</button>
+        <button className="btn-editar" onClick={() => handleEditar(producto)} >Editar</button>
+        <button className="btn-borrar" onClick={() => handleEliminar(producto.id)}>Borrar</button>
     </td>
 </tr>
   )

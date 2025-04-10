@@ -1,7 +1,65 @@
-.btn-accion {
-    border-radius: 5px;
+.btn-ver {
+    background-color: #5dcf2d; // Fondo del botón
+    color: #fff; // Texto en blanco
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px; // Bordes redondeados
     cursor: pointer;
-    padding: 3%;
-    display: grid;
-    
+    transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover {
+      background-color: #0a7621; // Color al pasar el mouse
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); // Efecto de sombra
+    }
+
+}
+
+.botonera button {
+    width: 80%;
+    margin-bottom: 30px; /* Añade espacio debajo de cada botón */
+    margin: 0 5px; /* Espaciado horizontal entre botones */
+    padding: 10px 10px; /* Más espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    @media screen and (min-width: 992px){
+        width: 80%;
+        padding: 10px 15px; /* Más espacio interno */
+        border-radius: 5px; /* Bordes redondeados */
+    }
+
+}
+
+
+.btn-editar {
+
+    background-color: #fffc35; // Fondo del botón
+    color: #fff; // Texto en blanco
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px; // Bordes redondeados
+    cursor: pointer;
+    transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover {
+      background-color: #bac015; // Color al pasar el mouse
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); // Efecto de sombra
+    }
+
+
+}
+
+.btn-borrar {
+
+    background-color: #f41010; // Fondo del botón
+    color: #fff; // Texto en blanco
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px; // Bordes redondeados
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+    &:hover {
+      background-color: #a72323; // Color al pasar el mouse
+    }
 }
