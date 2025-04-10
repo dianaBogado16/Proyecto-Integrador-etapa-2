@@ -1,0 +1,47 @@
+.titulo-agregar {
+    text-align: center;
+    margin: 20px;
+}
+
+.formulario_editar_producto {
+    width: fit-content; // Ajusta el ancho al contenido del formulario
+    height: fit-content; // Ajusta la altura al contenido del formulario
+    margin: 0 auto; // Centra el formulario horizontalmente
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px; // Espaciado interno para evitar que el texto toque el borde
+    border: 2px solid #3a0ca3; // Define el borde
+    border-radius: 10px; // Bordes redondeados para darle estilo
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); // Agrega sombra para profundidad
+    background-color: #f6f6f6; // Color de fondo ligero para resaltar los bordes
+    margin-bottom: 40px;
+
+    &:focus-within {
+        border-color: #c877ed; // Cambia el color del borde cuando el usuario interactúa con el formulario
+    }
+
+    .btn-guardar,
+    .btn-limpiar {
+        background-color: #9b59b6; // Fondo del botón
+        color: #fff; // Texto en blanco
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px; // Bordes redondeados
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      
+        &:hover {
+          background-color: #8e44ad; // Color al pasar el mouse
+        }
+      
+        &:focus {
+          outline: 2px solid #6a0dad; // Indica claramente el enfoque
+          outline-offset: 2px;
+        }
+    }
+
+
+
+}
+  

@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react"
 import ProductosContext from "../../contexts/ProductosContext"
+import './formulario.scss'
 
 const Formulario = () => {
 
@@ -60,9 +61,9 @@ const Formulario = () => {
 
   return (
     <>
-        <h2>Agregar: Editar</h2>
+        <h2 className="titulo-agregar">Agregar/ Editar</h2>
 
-        <form onSubmit={handleSubmit}>
+        <form className="formulario_editar_producto" onSubmit={handleSubmit}>
            
             <div>
                 <label htmlFor="lbl-nombre">Nombre</label>
@@ -137,8 +138,8 @@ const Formulario = () => {
                     onChange={handleChange}  />
             </div>
 
-            <button type="submit">Guardar : Editar</button>
-            <button type="reset" onClick={handleReset}>Limpiar</button>
+            <button className="btn-guardar" type="submit">Guardar / Editar</button>
+            <button className="btn-limpiar" type="reset" onClick={handleReset}>Limpiar</button>
 
         </form>
     
