@@ -1,0 +1,14 @@
+.section-cards { /* Descripcion de la cant de productos que se venden */
+    background-color: #f1f2f3;
+    padding: 1rem;
+
+}
+
+.cards-container { /* Contenedor de las cartas de productos */
+    display: flex; /* Si pongo esto solamente, las cartas se ponen en fila, una al lado de la otra */
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem; /* Defini un espacio entre cada card para separar */
+
+}
+
