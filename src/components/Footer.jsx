@@ -14,6 +14,8 @@ const Footer = () => {
   
           <div className="facebook">
             
+            <img src="/imgs/facebook-logo.png" alt="Instagram Logo" style={{ width: '50px', height: 'auto' }} />
+            
           </div>
   
           <div className="twitter">
