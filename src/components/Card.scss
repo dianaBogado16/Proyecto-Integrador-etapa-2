@@ -1,5 +1,4 @@
 .card {
-
     min-width: 400px;
     max-width: 500px;
     height: 200px;
@@ -7,74 +6,57 @@
     background-color: orange;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0px 1px 5px 0px rgba(0 ,0 ,0 ,0.3);
+    overflow: hidden; /* No quiero que me ocupe todo el ancho disponible */
+    box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.3); /* Le agrego sombra a la carta */
 
-    transition: transform .2s; /* ! No puede ser all */
+    transition: transform .2s; /* Le digo cuantos segundos debe tardar la transformacion, en este caso 2seg, por lo que termina haciendo mas pausado el giro */
+    background-image: linear-gradient(#3a0ca3,#7209b7,#f72585);
 
-    &:hover,
-    &:focus {
-        /* radianes 2pi, gradianes 400, decimles 360 grados, vueltas 1turn  */
-        transform: scale(1.03) skew(0deg) rotate(2deg);
-        transform-origin: bottom;
-        box-shadow: 0px 7px 8px 0px rgba(0 ,0 ,0 ,0.5);
+
+
+    &:hover, 
+    &:focus { 
+        box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.5);
+        cursor: pointer;
     }
 
     &__article {
-        display: flex;
+        display: flex; 
+        /* Convierto en un flex container, osea que todo lo que tenga adentro termina siendo un flex item */
     }
 
-    &__image {
-        object-fit: cover;
-        width: 100%;
+    &__image { /* la foto de los productos */
+        object-fit: cover; /* le digo que ocupe todo el espacio disponible que haya */
+        width: 100%; /*En esta instruccion y la de abajo le digo que tome el alto y el ancho que ya defini en .card*/
         height: 100%;
     }
 
-    &:nth-child(5n + 1) {
-        background-image: linear-gradient(to top, #aaafad 0%, #60efff 100%);
-    }
-
-    &:nth-child(5n + 2) {
-        background-image: linear-gradient(to top, #696eff 0%, #f8accf 100%);
-    }
-
-    &:nth-child(5n + 3) {
-        background-image: linear-gradient(to top, #ff1b6b 0%, #34caff 100%);
-    }
-
-    &:nth-child(5n + 4) {
-        background-image: linear-gradient(to top, #ff930f 0%, #fff95b 100%);
-    }
-
-    &:nth-child(5n + 5) {
-        background-image: linear-gradient(to top, #ff0f7b 0%, #f89b29 100%);
-    }
-
-    &__image-container {
+    &__image-container { /* Contenedor de la imagen */
         height: 200px;
         background-color: blue;
-        overflow: hidden;
+        overflow: hidden; /* Por si se sale la imagen, no lo permito */
         clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%); /* Estado inicial */
     }
 
     &:hover &__image-container,
     &:focus &__image-container {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* Estado final */
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);  /* Estado final */
     }
 
-    /* Responsive ->  992px */
-
-    @media screen and (min-width: 992px) {
-        & { /* .card */
+    /* Responsive 992px */
+    @media screen and (min-width: 992px){ /* Cuando la pantalla sea mas grande */
+        & { /* .card: Como escribo este codigo dentro de la card, con el &, gracias a sass le estoy indicando que esta medida debe ser tomada dentro de la card */
             width: 220px;
             max-width: 300px;
             height: 400px;
-        }
-
-        &__article { /* .card__article */
-            flex-direction: column;
-        }
+            
         
+        }
+ 
+        &__article { /* card__article */
+            flex-direction: column; /* Le pido que las cartas esten en forma de columna */
+        }
+                
         & &__image-container { /* .card .card__image-container */
             clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px); /* Estado inicial */
         }
