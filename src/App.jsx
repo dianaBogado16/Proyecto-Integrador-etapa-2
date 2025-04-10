@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router"
 import Rutas from "./routes/Rutas"
-import Cabecera from "./components/cabecera"
+import Cabecera from "./components/Cabecera"
 import Footer from "./components/Footer"
 
 const App = () => {
