@@ -21,6 +21,11 @@
 
     &__logo-container:hover {
         transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
+
+    }
+    
+    .material-icons {
+        color: #fff;
     }
 
     &__form-container {
