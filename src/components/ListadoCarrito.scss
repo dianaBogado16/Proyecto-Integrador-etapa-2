@@ -20,7 +20,42 @@ table.tabla-carrito {
     
       td {
         background-color: #c5c2c2; // Fondo neutral para las celdas
-      }
+      }     
+}
+
+.btn-vaciar {
+
+    background-color: #f41010; // Fondo del botón
+    color: #fff; // Texto en blanco
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; // Bordes redondeados
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+    &:hover {
+      background-color: #a72323; // Color al pasar el mouse
+    }
+  
+
+
+}
+.btn-comprar {
+    background-color: #5dcf2d; // Fondo del botón
+    color: #fff; // Texto en blanco
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; // Bordes redondeados
+    cursor: pointer;
+    transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover {
+      background-color: #0a7621; // Color al pasar el mouse
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); // Efecto de sombra
+    }
+  
+
 
 }
 
