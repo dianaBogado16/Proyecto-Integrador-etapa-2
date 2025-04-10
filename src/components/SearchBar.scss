@@ -59,27 +59,27 @@
     }
 
     &__carrito-container {
-        flex: 0 0 3rem; /* shorthand(grow shrink basis) */
+        flex: 0 0 3rem; 
         background-color: #3C096C;
         text-align: center;
         padding-top: 20px;
         color: white;
         cursor: pointer;
 
-            // Específicamente para el icono
+
         .material-icons {
-            color: white; // Color inicial del icono
-            font-size: 24px; // Ajusta el tamaño del icono
-            transition: color 0.3s ease, transform 0.3s ease; // Transición suave para interacciones
+            color: white; 
+            font-size: 24px; 
+            transition: color 0.3s ease, transform 0.3s ease; 
 
             &:hover {
-            color: #FFD700; // Cambia el color al pasar el mouse (amarillo dorado)
-            transform: scale(1.2); // Agranda el icono ligeramente
+            color: #FFD700; 
+            transform: scale(1.2); 
             }
 
             &:focus {
-            outline: none; // Quita el contorno predeterminado
-            color: #FF5733; // Cambia de color al enfocar (naranja vibrante)
+            outline: none; 
+            color: #FF5733; 
             }
         }
     }
@@ -88,13 +88,13 @@
         &__form-search {
             width: 300px;
             height: 35px;
-            border-radius: 6px 0 0 6px; /* Bordes redondeados a la izquierda */
+            border-radius: 6px 0 0 6px; 
             
         }
 
         &__form-submit {
             height: 35px;
-            border-radius: 0 6px 6px 0; /* Bordes redondeados en la derecha */
+            border-radius: 0 6px 6px 0;
             border: none;
             text-align: center;
             padding: 10px;

@@ -5,11 +5,10 @@ import './ListadoCarrito.scss';
 const ListadoCarrito = () => {
     const { 
         carrito, 
+        eliminarProductoDelCarritoContext, 
         limpiarCarritoContext, 
         guardarCarritoBackendContext 
     } = useContext(CarritoContext);
-
-    console.log(carrito);
 
     const handleComprar = () => {
         console.log('Comprando...');
@@ -18,28 +17,25 @@ const ListadoCarrito = () => {
 
     const handleLimpiarCarrito = () => {
         console.log('Vaciando carrito...');
-        limpiarCarritoContext();
+        limpiarCarritoContext(); // Vacía todo el carrito
     };
 
-    // Función para calcular el subtotal de cada producto
     const calcularSubtotal = (producto) => {
-        const precio = typeof producto.precio === "number" ? producto.precio : 0; // Validación de precio
+        const precio = typeof producto.precio === "number" ? producto.precio : 0;
         return producto.cantidad * precio;
     };
 
-    // Función para calcular el total general
     const calcularTotal = () => {
         return carrito.reduce((total, producto) => total + calcularSubtotal(producto), 0);
     };
 
-    // Función para calcular el total de ítems
     const calcularTotalItems = () => {
         return carrito.reduce((total, producto) => total + producto.cantidad, 0);
     };
 
     const handleEliminar = (id) => {
         console.log(`Eliminando producto con ID: ${id}`);
-        limpiarCarritoContext(id); // Llama a la función para eliminar el producto (debe ser implementada en el contexto)
+        eliminarProductoDelCarritoContext(id); // Llamada correcta al contexto para eliminar por ID
     };
 
     return (
@@ -85,7 +81,6 @@ const ListadoCarrito = () => {
                             ))
                         )
                     }
-                    {/* Fila de total */}
                     {
                         carrito.length > 0 && (
                             <tr>

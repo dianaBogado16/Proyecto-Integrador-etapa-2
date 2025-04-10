@@ -79,9 +79,7 @@ const CarritoProvider = ( {children} ) => {
         }
     }
 
-    const calcularCantidadProductosCarritoContext = () => {
 
-    }
 
     const data = {
         agregarProductoAlCarritoContext,

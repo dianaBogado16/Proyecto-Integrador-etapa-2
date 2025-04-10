@@ -11,10 +11,10 @@ const TablaFila = ({producto}) => {
 
   const navigate = useNavigate()
 
-const handleEliminar = (id) => {
-  //hacer lo del sweet alert
-  eliminarProductoContext(id)
-}
+  const handleEliminar = (id) => {
+    // Lógica de Sweet Alert
+    eliminarProductoContext(id)
+  }
 
 const handleEditar = (producto) => {
   setProductoAEditar(producto)
@@ -27,7 +27,6 @@ const handleVer = (id) => {
   return (
     <tr>
     <td>{producto.nombre}</td>
-
     <td>{producto.precio}</td>
     <td>{producto.stock}</td>
     <td>{producto.marca}</td>

@@ -1,26 +1,23 @@
-import './ProductoDetalle.scss'
+
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import Spinner from '../components/Spinner'
-
+import './DetallesDelProducto.scss'
 
 const ProductoDetalle = () => {
 
   const { id } = useParams()
 
 
-
-  console.log(id)
-
   const [productoDetalle, setProductoDetalle] = useState(null)
 
   useEffect(() => {
 
-    getOne(id)
+    obtener(id)
 
   }, [])
 
-  const getOne = async (id) => {
+  const obtener = async (id) => {
 
 
     const urlGetOne = import.meta.env.VITE_BACKEND_PRODUCTOS + id
@@ -45,8 +42,7 @@ const ProductoDetalle = () => {
     <>
       <section className="section-detalle">
         <header className="section-detalle__header">
-          <h1>Producto detalle</h1>
-
+          <h1 className='titulo'>Detalles del producto</h1>
         </header>
       </section>
 
@@ -55,13 +51,13 @@ const ProductoDetalle = () => {
           (
 
             <section className='section-detalle__producto-Detalle'>
-              <h2> {productoDetalle.nombre}</h2>
-              <img src={`/${productoDetalle.foto}`} alt={productoDetalle.nombre} />
-              <p>Marca: {productoDetalle.marca}</p>
-              <p>Categoria: {productoDetalle.categoria}</p>
-              <p>Detalles: {productoDetalle.detalles}</p>
+              <h2 className='nombre-producto' >{productoDetalle.nombre}</h2>
+              <img className='foto-producto' src={`/${productoDetalle.foto}`} alt={productoDetalle.nombre} />
+              <p> <strong  className='info' >Marca:</strong>{productoDetalle.marca}</p>
+              <p> <strong className='info' >Categoria:</strong>  {productoDetalle.categoria}</p>
+              <p> <strong className='info' >Detalles:</strong>  {productoDetalle.detalles}</p>
               
-              <p><strong>A tan solo:</strong> {productoDetalle.precio}</p>
+              <p><strong className='info' >Precio</strong> {productoDetalle.precio}</p>
             </section>
 
           ) :

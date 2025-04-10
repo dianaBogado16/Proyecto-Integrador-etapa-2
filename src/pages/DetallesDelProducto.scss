@@ -1,0 +1,26 @@
+.nombre-producto {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: #9D4EDD;
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px rgba(79, 0, 108, 0.5);
+    padding: 2%;
+}
+
+.foto-producto {
+    max-width: 30em; /* La foto no será más ancha que 100px */
+    max-height: 30em; /* La foto no será más alta que 100px */
+    width: auto; /* Permite que la imagen ajuste su ancho proporcionalmente */
+    height: auto; /* Conserva las proporciones originales */
+    object-fit: cover; /* Asegura que la imagen no se distorsione */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+}
+
+.section-detalle__producto-Detalle {
+    text-align: center;
+    font-size: 1em;
+}
+
+.info {
+    color: #3C096C;
+}
