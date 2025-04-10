@@ -109,6 +109,7 @@ const ProductosProvider = ( { children } ) => {
         eliminarProductoContext,
         productoAEditar,
         setProductoAEditar
+        
     }
 
     return <ProductosContext.Provider value={data}>
