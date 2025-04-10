@@ -1,6 +1,7 @@
 
 import { createContext, useEffect, useState } from "react";
 import { peticionesHttp } from "../helpers/peticiones-http";
+
 // ! CREANDO CONTEXTO
 
 // ! 1. Creamos el Context
@@ -14,10 +15,10 @@ const ProductosProvider = ( { children } ) => {
     useEffect(() => {
         getAllProductos()
     }, [])
-
-
+    
 
     const getAllProductos = async () => {
+
         try {
             
             const prods = await peticionesHttp(url, {})
@@ -110,13 +111,10 @@ const ProductosProvider = ( { children } ) => {
         setProductoAEditar
     }
 
-    return <ProductosContext.Provider value={data}> 
-    
-    {children} 
-    
-    </ProductosContext.Provider>
+    return <ProductosContext.Provider value={data}>
+         {children} 
+         </ProductosContext.Provider>
 }
-
 // ! 3. Exportamos el Context y el Provider
 export { ProductosProvider }
 export default ProductosContext
