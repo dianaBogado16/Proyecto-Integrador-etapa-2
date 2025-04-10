@@ -9,15 +9,15 @@ const Footer = () => {
   
         <div className="logos">
           <div className="instagram">
-            <i className="fa-brands fa-instagram fa-2x"></i>
+          <img src="/imgs/instagram-logo.png" alt="Instagram Logo" style={{ width: '50px', height: 'auto' }} />
           </div>
   
           <div className="facebook">
-            <i className="fa-brands fa-facebook fa-2x"></i>
+            
           </div>
   
           <div className="twitter">
-            <i className="fa-brands fa-twitter fa-2x"></i>
+          
           </div>
         </div>
         
