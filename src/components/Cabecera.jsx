@@ -7,7 +7,7 @@ const Cabecera = () => {
     <header className="main-header">
       <input type="checkbox" id="menu" />
 
-      <Navbar />
+      <Navbar/>
 
       <SearchBar />
 
