@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react"
 import ProductosContext from "../../contexts/ProductosContext"
-import './formulario.scss'
+import "./Formulario.scss"
 
 const Formulario = () => {
 
