@@ -76,17 +76,6 @@
       "detalles": "Piola. 8k",
       "foto": "imgs/apple-iphone-11-pro-max.jpg",
       "envio": true
-    },
-    {
-      "id": "a4ae",
-      "nombre": "hola",
-      "precio": "asd",
-      "stock": "12",
-      "marca": "asas",
-      "categoria": "1sas",
-      "detalles": "csdas",
-      "foto": "sasas",
-      "envio": true
     }
   ],
   "carrito": [

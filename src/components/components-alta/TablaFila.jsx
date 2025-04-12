@@ -20,7 +20,6 @@ const handleEditar = (producto) => {
   setProductoAEditar(producto)
 }
 const handleVer = (id) => {
-  console.log(id)
   navigate(`/alta/detalle/${id}`)
 }
 
