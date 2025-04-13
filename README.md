@@ -15,3 +15,15 @@ Diana Bogado
 ```sh
  https://sparkling-sundae-229cdb.netlify.app/
 ``` 
+
+
+# Link de Mockapi productos
+```sh
+https://67f850f62466325443ec62f5.mockapi.io/api/v1/Productos
+``` 
+
+
+# Link de Mockapi carrito
+```sh
+https://67f850f62466325443ec62f5.mockapi.io/api/v1/Carrito
+``` 
