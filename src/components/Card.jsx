@@ -3,7 +3,6 @@ import './Card.scss'
 import CarritoContext from '../contexts/CarritoContext'
 
 const Card = ({ producto }) => { // props = { producto }
-
   const { agregarProductoAlCarritoContext } = useContext(CarritoContext)
 
   const handleAgregar = (producto) => {
@@ -18,9 +17,10 @@ const Card = ({ producto }) => { // props = { producto }
                 <img className="card__image" src={producto.foto} alt={producto.nombre} />
             </div>
             <div className="card__content">
-                <h2 className="card__heading">{producto.nombre}</h2>
+                <h2 className="card__heading">{producto.nombre}</h2>    
                 <div className="card__description">
-                    <p>{producto.descripcion}</p>
+                    <p>{producto.detalles}</p>
+                    
                     <button className='btn_agregar' onClick={() => handleAgregar(producto)}>Agregar</button>
                 </div>
             </div>

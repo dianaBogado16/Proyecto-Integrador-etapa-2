@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import ProductosContext from "../../contexts/ProductosContext"
 import "./Formulario.scss"
+import DragDrop from "./DragDrop"
 
 const Formulario = () => {
 
@@ -29,13 +30,24 @@ const Formulario = () => {
 
     const [form, setForm] = useState(formInicial)
 
+    const placeHolderImagen = 'http://localhost:8080/uploads/place-holder.jpg'
+    /* Creamos 2 estados para gestionar el drag and drop */
+    const [foto, setFoto] = useState({foto: placeHolderImagen }) 
+    const [srcImagenBack, setSrcImagenBack] = useState(placeHolderImagen)
+
+    
     const handleSubmit = (e) => {
         e.preventDefault()
 
         if (form.id === null) {
-            crearProductoContext(form)
+           // console.log(form);
+           // console.log(foto);
+            const productoNuevoConImagen = {...form, ...foto}
+           // console.log(productoNuevoConImagen);
+            crearProductoContext(productoNuevoConImagen)
         } else {
-            actualizarProductoContext(form)
+            const productoNuevoConImagen = {...form, ...foto}
+            actualizarProductoContext(productoNuevoConImagen)
         }
 
     }
@@ -53,9 +65,12 @@ const Formulario = () => {
     
     }
 
+    //se encarga de blanquear todo el form para empezar de nuevo
     const handleReset = () => {
         setForm(formInicial)
         setProductoAEditar(null)
+        setFoto( {foto: placeHolderImagen })
+        setSrcImagenBack(placeHolderImagen)
     }
 
 
@@ -119,7 +134,15 @@ const Formulario = () => {
                     value={form.detalles} 
                     onChange={handleChange}  />
             </div>
+
             <div>
+                <DragDrop 
+                    setFoto={setFoto} 
+                    srcImagenBack={srcImagenBack} 
+                    setSrcImagenBack={setSrcImagenBack} 
+                />
+            </div>
+        {/*   <div>
                 <label htmlFor="lbl-foto">Foto</label>
                 <input 
                     type="text" 
@@ -127,7 +150,7 @@ const Formulario = () => {
                     name="foto" 
                     value={form.foto} 
                     onChange={handleChange}  />
-            </div>
+            </div>  */}
             <div>
                 <label htmlFor="lbl-envio">Envío</label>
                 <input 

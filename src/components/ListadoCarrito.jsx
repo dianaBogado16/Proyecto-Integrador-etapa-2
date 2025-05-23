@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import CarritoContext from "../contexts/CarritoContext";
 import './ListadoCarrito.scss';
+import Swal from "sweetalert2";
 
 const ListadoCarrito = () => {
     const { 
@@ -13,11 +14,38 @@ const ListadoCarrito = () => {
     const handleComprar = () => {
         console.log('Comprando...');
         guardarCarritoBackendContext();
+
+        Swal.fire({
+        title: "Compra realizada!",
+        icon: "success",
+        draggable: true
+        });
+
     };
+    
 
     const handleLimpiarCarrito = () => {
         console.log('Vaciando carrito...');
+                Swal.fire({
+            title: "Estas seguro?",
+            text: "No podras revertir esto!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Si, vaciar carrito!"
+            }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                title: "Eliminado!",
+                text: "Tu carrito de compras ha sido vaciado",
+                icon: "success"
+                });
+            }
+        });
         limpiarCarritoContext(); // Vacía todo el carrito
+
+
     };
 
     const calcularSubtotal = (producto) => {
